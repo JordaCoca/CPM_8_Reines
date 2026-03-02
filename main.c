@@ -1,6 +1,18 @@
+#include <stdio.h>
+
 #define R 8
 int r[R+2];
-main()
+
+
+void psol(int* r,int nr)
+{
+    int i;
+    printf("Sol: ");
+    for(i=1;i<=nr;i++) printf("%d ",r[i]);
+    printf("\n");
+}
+
+int main()
 {
     int i,a,b;
     r[1]=1;
@@ -38,10 +50,3 @@ main()
     }
 }
 
-psol(int* r,int nr)
-{
-    int i;
-    printf("Sol: ");
-    for(i=1;i<=nr;i++) printf("%d ",r[i]);
-    printf("\n");
-}
